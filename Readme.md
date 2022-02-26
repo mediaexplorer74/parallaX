@@ -10,9 +10,12 @@ RnD only. UWP design project
 
 
 ## Tech details
-Compatibility with W10 / W10M - ok
+Compatibility with W10  - ok;  W10M - failed (?)
+
 Animations - ok
+
 Sound effects - ok
+
 Logics -- bad / rnd status :)
 
 
