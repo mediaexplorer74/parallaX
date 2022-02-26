@@ -37,11 +37,11 @@ namespace parallaX
         {
             this.InitializeComponent();
 
-            ShowSplashPanel.Begin();
-            ShowLogo.Begin();
-            ShowMenu.Begin();
+            //ShowSplashPanel.Begin();
+            //ShowLogo.Begin();
+            //ShowMenu.Begin();
 
-            playSound("onTrans01.wav", false);
+            //playSound("onTrans01.wav", false);
         }
 
         // LOGPANEL UPDATER
@@ -614,10 +614,21 @@ namespace parallaX
         // EMPTY1
         private async void empty1BTN_Click(object sender, RoutedEventArgs e)
         {
-            //DefaultLaunch1();
+            playSound("onClick01.wav", false);
+            playSound("onTrans01.wav", false);
+
+            textBoxDebug.Text = "";
+
+            updateText("* * * * * * * * * * * * * * * * * * * * * * *\n");
+            updateText("* * *  BTN 1   * * *\n");
+            updateText("* * * * * * * * * * * * * * * * * * * * * * *\n\n");
+
+            showDebugPanel();
+
+            DefaultLaunch2();//DefaultLaunch1();
         }
 
-        /*
+        
         async void DefaultLaunch2()
         {
             // Path to the file in the app package to launch
@@ -646,12 +657,23 @@ namespace parallaX
             }
         }
 
-        */
+        
 
         // EMPTY2
         private void empty2BTN_Click(object sender, RoutedEventArgs e)
         {
-            // DefaultLaunch2();
+            playSound("onClick01.wav", false);
+            playSound("onTrans01.wav", false);
+
+            textBoxDebug.Text = "";
+
+            updateText("* * * * * * * * * * * * * * * * * * * * * * *\n");
+            updateText("* * *  BTN 2   * * *\n");
+            updateText("* * * * * * * * * * * * * * * * * * * * * * *\n\n");
+
+            showDebugPanel();
+
+            DefaultLaunch2(); // DefaultLaunch2();
         }
 
         // SETTiNGS
